@@ -20,3 +20,10 @@ Python 3.x
 Biblioteca:
 
 os – para manipulação de diretórios e arquivos.
+
+📈 Benefícios
+Produtividade: Reduz o tempo gasto com tarefas repetitivas.
+
+Organização Padrão: Mantém sempre a mesma estrutura de pastas.
+
+Segurança: Evita perda de arquivos por bagunça ou sobrescrita.
