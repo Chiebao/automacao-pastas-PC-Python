@@ -1,29 +1,42 @@
-🗂️ Automação para Organização de Pastas
-Este projeto foi desenvolvido em Python com o objetivo de automatizar o processo de organização de arquivos e pastas no computador, tornando o gerenciamento mais rápido, eficiente e padronizado.
+# Automação para Organizar Pastas
 
-A aplicação analisa os arquivos em um diretório especificado, identifica seu tipo ou categoria e os move automaticamente para pastas correspondentes, seguindo regras personalizadas definidas pelo usuário.
+Script em Python que organiza uma pasta bagunçada em segundos: você escolhe a pasta, e os arquivos são movidos automaticamente para subpastas de acordo com o tipo.
 
-🚀 Funcionalidades
-Organização Automática: Move arquivos para pastas de acordo com suas extensões ou tipos.
+---
 
-Personalização: Permite criar regras específicas de categorização.
+## Como funciona
 
-Eficiência: Elimina a necessidade de organizar manualmente grandes volumes de arquivos.
+1. Abre uma janela para escolher a pasta que será organizada.
+2. Lê os arquivos e identifica a extensão de cada um.
+3. Cria as subpastas que faltarem e move os arquivos:
 
-Compatibilidade: Funciona em Windows, Linux e macOS.
+| Subpasta | Extensões |
+|---|---|
+| `imagens` | `.png` `.jpg` `.jpeg` |
+| `planilhas` | `.xlsx` |
+| `pdfs` | `.pdf` |
+| `csv` | `.csv` |
 
-Logs de Operações: Gera relatórios com todas as ações realizadas.
+As regras ficam no dicionário `locais`, no início do código, e podem ser ampliadas com novas categorias e extensões.
 
-🛠️ Tecnologias Utilizadas
-Python 3.x
+## Como executar
 
-Biblioteca:
+```bash
+python main.py
+```
 
-os – para manipulação de diretórios e arquivos.
+Não precisa instalar nada além do Python 3: o script usa apenas bibliotecas nativas (`os` e `tkinter`).
 
-📈 Benefícios
-Produtividade: Reduz o tempo gasto com tarefas repetitivas.
+## Tecnologias
 
-Organização Padrão: Mantém sempre a mesma estrutura de pastas.
+`Python` `os` `tkinter`
 
-Segurança: Evita perda de arquivos por bagunça ou sobrescrita.
+## Próximos passos
+
+- Registro (log) de cada arquivo movido
+- Tratamento de arquivos com o mesmo nome na pasta de destino
+
+---
+
+**Luana Godoy** · Estudante de Análise e Desenvolvimento de Sistemas
+[LinkedIn](https://www.linkedin.com/in/luana-chiebao) · [GitHub](https://github.com/Chiebao)
